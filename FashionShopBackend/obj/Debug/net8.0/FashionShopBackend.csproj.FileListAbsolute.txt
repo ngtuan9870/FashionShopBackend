@@ -135,3 +135,4 @@ C:\Users\Administrator\source\repos\FashionShopBackend\FashionShopBackend\obj\De
 C:\Users\Administrator\source\repos\FashionShopBackend\FashionShopBackend\obj\Debug\net8.0\FashionShopBackend.pdb
 C:\Users\Administrator\source\repos\FashionShopBackend\FashionShopBackend\obj\Debug\net8.0\FashionShopBackend.genruntimeconfig.cache
 C:\Users\Administrator\source\repos\FashionShopBackend\FashionShopBackend\obj\Debug\net8.0\ref\FashionShopBackend.dll
+C:\Users\Administrator\source\repos\FashionShopBackend\FashionShopBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

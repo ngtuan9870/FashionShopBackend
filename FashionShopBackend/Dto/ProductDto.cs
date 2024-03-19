@@ -1,7 +1,6 @@
-﻿
-namespace FashionShopNETCoreAPI.Data
+﻿namespace FashionShopBackend.Dto
 {
-    public class Product
+    public class ProductDto
     {
         public int product_id { get; set; }
         public string product_name { get; set; }
@@ -10,6 +9,5 @@ namespace FashionShopNETCoreAPI.Data
         public double product_price { get; set; }
         public int product_promotion { get; set; }
         public int category_id { get; set; }
-        public Category Category { get; set; }
     }
 }

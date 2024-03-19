@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FashionShopBackend.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace FashionShopNETCoreAPI.Data
 {
@@ -31,7 +32,7 @@ namespace FashionShopNETCoreAPI.Data
             {
                 e.ToTable("Users");
                 e.HasKey(u => u.user_id);
-                e.Property(u => u.user_name).HasMaxLength(100).IsRequired();
+                e.HasIndex(u => u.user_name).IsUnique();
                 e.Property(u => u.user_password).IsRequired();
                 e.Property(u => u.user_email).IsRequired();
                 e.Property(u => u.user_birthday).HasDefaultValueSql("getutcdate()").IsRequired();

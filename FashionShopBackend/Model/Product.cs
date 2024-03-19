@@ -1,8 +1,6 @@
-﻿using System.ComponentModel;
-
-namespace FashionShopNETCoreAPI.Model
+﻿namespace FashionShopBackend.Model
 {
-    public class ProductVM
+    public class Product
     {
         public int product_id { get; set; }
         public string product_name { get; set; }
@@ -11,6 +9,6 @@ namespace FashionShopNETCoreAPI.Model
         public double product_price { get; set; }
         public int product_promotion { get; set; }
         public int category_id { get; set; }
-        public CategoryVM Category { get; set; }
+        public Category Category { get; set; }
     }
 }

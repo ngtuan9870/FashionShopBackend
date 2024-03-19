@@ -11,6 +11,7 @@ namespace FashionShopNETCoreAPI.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<RefreshToken> refreshTokens { get; set; }
         #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

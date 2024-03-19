@@ -12,7 +12,9 @@ namespace FashionShopBackend.Interface
         void deleteUser(int id);
         bool login(UserDto user);
         void register(UserDto user);
-        string GenerateJwtToken(UserDto user);
-        string getToken(UserDto user);
+        Task<TokenModel> GenerateJwtToken(User user);
+        Task<TokenModel> getToken(LoginModel user);
+        string GenerateFreshJwtToken();
+        Task<ApiResponse> ReNewToken(TokenModel tokenModel);
     }
 }

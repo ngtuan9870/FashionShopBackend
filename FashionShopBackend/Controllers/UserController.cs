@@ -61,14 +61,24 @@ namespace FashionShopBackend.Controllers
                 return BadRequest(ModelState);
             return Ok();
         }
-        [HttpPost("getValidate")]
-        public IActionResult Validate(UserDto user)
+        [HttpPost("login")]
+        public IActionResult login(LoginModel user)
         {
             return Ok(new
             {
                 Success = true,
                 Message = _userRepository.getToken(user)
             });
+        }
+        [HttpPost("reNewToken")]
+        public async Task<IActionResult> ReNewToken(TokenModel tokenModel)
+        {
+            var check = await _userRepository.ReNewToken(tokenModel);
+            if (check.success)
+            {
+                return Ok(check);
+            }
+            return BadRequest();
         }
     }
 }
